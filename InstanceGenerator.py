@@ -71,7 +71,7 @@ class InstanceGenerator(object):
             nPassengers = []
 
             for s in xrange(0, numServices):
-                passengerNumber = random.randint(minNumPassengersPerService, maxNumPassengersPerService)
+                passengerNumber = int(min(random.expovariate(1/float(minNumPassengersPerService)), maxNumPassengersPerService))
                 nPassengers.append(passengerNumber)
                 startTime = int(random.uniform(earliestTimeStart, latestTimeStart))
                 time_start.append(startTime)
@@ -80,11 +80,7 @@ class InstanceGenerator(object):
                 durationInKm = int(random.uniform(minDurationKm, maxDurationKm))
                 duration_km.append(durationInKm)
 
-            
-            numThreads = 0
-            firstThreadIdPerTask = []
-            numThreadsPerTask = []
-            resourcesPerThread = []
+
             cap_b = []
             euros_min_b = []
             euros_km_b = []
