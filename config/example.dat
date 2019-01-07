@@ -4,7 +4,7 @@ fileNamePrefix = instance0.8;
 fileNameExtension = dat;
 numInstances = 1;
 
-numServices = 200;
+numServices = 100;
 minNumPassengersPerService = 10;
 maxNumPassengersPerService = 50;
 earliestTimeStart = 0;
@@ -12,10 +12,10 @@ latestTimeStart = 1179;
 minDurationMinutes = 5;
 maxDurationMinutes = 200;
 minDurationKm = 1;
-maxDurationKm = 100;
+maxDurationKm = 20;
 
-numBuses = 100;
-minCapacityPerBus = 4;
+numBuses = 25;
+minCapacityPerBus = 25;
 maxCapacityPerBus = 50;
 minEurosPerMin = 10;
 maxEurosPerMin = 15;
@@ -24,8 +24,8 @@ maxEurosPerKm = 12;
 maxBuses = 70;
 
 numDrivers = 100;
-minHighestNumberOfMinutesPerDriver = 30;
+minHighestNumberOfMinutesPerDriver = 240;
 maxHighestNumberOfMinutesPerDriver = 480;
-CBM = 10;
-CEM = 15;
-BM = 100;
+CBM = 0.2;
+CEM = 0.3;
+BM = 480;
